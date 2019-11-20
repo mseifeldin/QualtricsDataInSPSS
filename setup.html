@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Qualtrics & SPSS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">Basic Qualtrics Data Processing & Analysis in SPSS</h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="current">
+									<a href="setup.html">Setup</a>
+									<ul>
+										<li><a href="#download_data">Download Data</a></li>
+										<li><a href="#data_orientation">Data Orientation</a></li>
+									</ul>
+								</li>
+								<li><a href="dataprocessing.html">Data Processing</a>
+									<ul>
+										<li><a href="dataprocessing.html#condense_columns">Condensing Columns</a></li>
+										<li><a href="dataprocessing.html#new_columns">New Columns</a></li>
+										<li><a href="dataprocessing.html#reverse_coding">Reverse Coding</a></li>
+										<li><a href="dataprocessing.html#internal_reliability">Internal Reliability</a></li>
+									</ul>
+								</li>
+								<li><a href="descriptivestats.html">Descriptive Statistics</a>
+									<ul>
+										<li><a href="descriptivestats.html#calculations">Calculations</a></li>
+										<li><a href="descriptivestats.html#frequency">Frequency</a></li>
+									</ul>
+								</li>
+								<li><a href="hypothesistesting.html">Hypothesis Testing</a>
+									<ul>
+										<li><a href="hypothesistesting.html#variables">Types of Variables</a></li>
+										<li><a href="hypothesistesting.html#decision_tree">Analysis Decision Tree</a></li>
+										<li><a href="hypothesistesting.html#correlation">Correlations</a></li>
+										<li><a href="hypothesistesting.html#t_test">T-tests</a></li>
+										<li><a href="hypothesistesting.html#anova">ANOVAs</a></li>
+									</ul>
+								</li>
+								<li><a href="visualization.html">Visualization</a>
+									<ul>
+										<li><a href="visualization.html#histograms">Histograms</a></li>
+										<li><a href="visualization.html#scatterplots">Scatter Plots</a></li>
+									</ul>
+								</li>	
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-2 col-12-narrower">
+								<div class="sidebar" id="sidebar">
+
+									<!-- Sidebar -->
+
+										<section>
+											<h3>Topics</h3>
+											<ul class="links">
+												<li><a href="#download_data">Download Data</a></li>
+												<li><a href="#data_orientation">Data Orientation</a></li>
+											</ul>
+<!-- 											<footer>
+												<a href="#" class="button">Continue Reading</a>
+											</footer> -->
+										</section>
+
+<!-- 										<section>
+											<h3>Another Subheading</h3>
+											
+											<footer>
+												<a href="#" class="button">More Random Links</a>
+											</footer>
+										</section> -->
+
+								</div>
+							</div>
+							<div class="col-10  col-12-narrower imp-narrower">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<header>
+												<h2>Setup</h2>
+												<!-- <p>Sidebar on the left, content on the right.</p> -->
+											</header>
+
+											<!-- <span class="image featured"><img src="images/banner.jpg" alt="" /></span> -->
+
+											<h3 id=download_data>First, download your data from Qualtrics</h3>
+											<p>Open your survey in Qualtrics and hit the "Data & Analysis" tab in the top menu bar:</p>
+											<span class="image featured"><img src="images/q-data-tab.png" alt="qualtrics data tab location" /></span>
+											<p>Find the "Export and Import" dropdown menu above the data and select "Export Data..."</p>
+											<span class="image featured"><img src="images/qualt_expimp.png" alt="qualtrics export and import location" /></span>
+											<span class="image featured"><img src="images/qualt_chooseexportdata.png" alt="qualtrics export data menu" /></span>
+											<p>Qualtrics allows us to download data specialized for analysis in SPSS. Choose this option and download the data.</p>
+											<span class="image featured"><img src="images/datadownload.png" alt="qualtrics choose SPSS file" /></span>
+
+
+											<p><b>In examples, this tutorial will use data from an informal Qualtrics experiment on altruistic behavior and the valuation of reputation. You can download the data here:</b></p>
+											
+											<a href="data/altruism_data.sav" class="button">Download SPSS Data</a>
+
+			
+
+											<h3 id="data_orientation">Orientation to Data in SPSS</h3>
+
+											<h4>Data View</h4>
+
+											<p>Open up your data in SPSS. It should look like a spreadsheet.</p>
+
+											<span class="image featured"><img src="images/blankview.png" alt="" /></span> 
+
+											<h4>Row Representation</h4>
+											<p>Each row of your data contains all of the data an individual participant, whether collected automatically by Qualtrics or entered by the participant themselves:</p>
+
+											<span class="image featured"><img src="images/row_participant.png" alt="" /></span> 
+
+											<h4>Column Representation</h4>
+											<p>Each column of your data contains all of the data (from every participant) for a particular variable.</p>
+
+											
+
+											<span class="image featured"><img src="images/columnvariable.png" alt="" /></span> 
+											
+											<h4>Basic Commands</h4>
+
+											<span class="image featured"><img src="images/spsstoolbar.png" alt="" /></span> 
+
+											<h5>File</h5>
+											<p>use to save, open, create new, and export files</p>
+
+											<h5>Data</h5>
+											<p>use to create filter variables or split output by group</p>
+
+											<h5>Transform</h5>
+											<p>use to create new variables, recode variables, compute new variables</p>
+
+											<h5>Analyze</h5>
+											<p>use to conduct descriptive and inferential statistics</p>
+
+											<h4>Variable View</h4>
+
+											<span class="image featured"><img src="images/variableview.png" alt="" /></span> 
+
+											<h5>Name</h5>
+											<p>What you've named the variable</p>
+
+											<h5>Type</h5>
+											<p>Tells you the type of data</p>
+											<p>numeric = numbers</p>
+											<p>string = words</p>
+
+											<h5>Label</h5>
+											<p>A description of what the variable is (e.g., “please indicate the extent to which…”</p>
+
+											<span class="image featured"><img src="images/variableview2.png" alt="" /></span> 
+
+											<h5>Values</h5>
+											<p>Descriptions of the values a variable can take and what they mean</p>
+											<p>e.g. 0 = man, 1 = woman</p>
+
+											<h5>Missing</h5>
+											<p>How many people did not answer that question on your survey</p>
+
+											<h5>Measures</h5>
+											<p>Categorical, ordinal, or continuous variable </p>
+											<p>In SPSS:</p>
+											<p>nominal = categorical</p>
+											<p>scale = continuous</p>
+
+
+											
+
+											<h3>Now we're ready to look at our data and figure it out. <a href="dataprocessing.html">Head on over to Data Processing</a></h3>
+										</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col6 col-6-narrower col-12-mobilep">
+								<h3>Links to Stuff</h3>
+								<ul class="footerlinks">
+									<li><a href="#">Qualtrics</a></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Maryam Seifeldin 2019. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

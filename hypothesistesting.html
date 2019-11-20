@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Qualtrics & SPSS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">Basic Qualtrics Data Processing & Analysis in SPSS</h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="setup.html">Setup</a>
+									<ul>
+										<li><a href="setup.html#download_data">Download Data</a></li>
+										<li><a href="setup.html#data_orientation">Data Orientation</a></li>
+									</ul>
+								</li>
+								<li><a href="dataprocessing.html">Data Processing</a>
+									<ul>
+										<li><a href="dataprocessing.html#condense_columns">Condensing Columns</a></li>
+										<li><a href="dataprocessing.html#new_columns">New Columns</a></li>
+										<li><a href="dataprocessing.html#reverse_coding">Reverse Coding</a></li>
+										<li><a href="dataprocessing.html#internal_reliability">Internal Reliability</a></li>
+									</ul>
+								</li>
+								<li><a href="descriptivestats.html">Descriptive Statistics</a>
+									<ul>
+										<li><a href="descriptivestats.html#calculations">Calculations</a></li>
+										<li><a href="descriptivestats.html#frequency">Frequency</a></li>
+									</ul>
+								</li>
+								<li class="current"><a href="hypothesistesting.html">Hypothesis Testing</a>
+									<ul>
+										<li><a href="#variables">Types of Variables</a></li>
+										<li><a href="#decision_tree">Analysis Decision Tree</a></li>
+										<li><a href="#correlation">Correlations</a></li>
+										<li><a href="#t_test">T-tests</a></li>
+										<li><a href="#anova">ANOVAs</a></li>	
+									</ul>
+								</li>
+								<li><a href="visualization.html">Visualization</a>
+									<ul>
+										<li><a href="visualization.html#histograms">Histograms</a></li>
+										<li><a href="visualization.html#scatterplots">Scatter Plots</a></li>
+									</ul>
+								</li>	
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-2 col-12-narrower">
+								<div class="sidebar" id="sidebar">
+
+									<!-- Sidebar -->
+
+										<section>
+											<h3>Topics</h3>
+											<ul class="links">
+												<li><a href="#variables">Types of Variables</a></li>
+												<li><a href="#decision_tree">Decision Tree</a></li>
+												<li><a href="#correlation">Correlations</a></li>
+												<li><a href="#t_test">T-tests</a></li>
+												<li><a href="#anova">ANOVAs</a></li>	
+											</ul>
+<!-- 											<footer>
+												<a href="#" class="button">Continue Reading</a>
+											</footer> -->
+										</section>
+
+
+								</div>
+							</div>
+							<div class="col-10  col-12-narrower imp-narrower">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<header>
+												<h2>Hypothesis Testing</h2>
+											</header>
+
+											<!-- <span class="image featured"><img src="images/banner.jpg" alt="" /></span> -->
+
+											<h3 id="variables">Types of Variables</h3>
+											
+											<h4>Independent vs Dependent</h4>
+											<h5>Independent Variables</h5>
+											<p>Independent variables are what would go on your x-axis if you drew a graph of your data. They are what "predicts" the dependent variable in your hypothesis. Anything you as the researcher have control over (like experimental condition) is an independent variable. Demographic modifiers are also a type of independent variable, because they are posed as predictive in the context of the research question and subsequent data analysis.</p>
+
+
+											
+											<h5>Dependent Variables</h5>
+											<p>Dependent variables are what would go on your y-axis if you drew a graph of your data. It’s what you’re “measuring", or  what is “predicted” by the independent variable. If it is something that you could not know or decide about your participants before your study, it is likely a dependent variable.</p>
+
+											<h4>Categorical vs Continuous</h4>
+											<h5>Categorical Variables</h5>
+											<p>Categorical variables a distinct set of finite possible values that don't need to be put in a particular order. For example: gender, experimental condition, geographic region, favorite movie, academic major, medical treatment status, hair color, political party registration, citizenship, age bracket, track meet event, or income bracket.</p>
+
+											
+											<h5>Continuous Variables</h5>
+											<p>Continuous variables are numeric, and can have an infinite number of values (even if there are finite ends to a the range of values; the key here is to ask if a decimalized or fractional data value would be an possible data point).  For example: time measurements, dates (because time is infinite), numerical age, likert scale scores, basketball team scores, weight measurements, height measurements, reaction time measurements, proportion of correct responses, number of sales, income, or distance measurements.</p>
+
+											<h5>Some loose rules of thumb:</h5>
+											<p>If you had a large set of responses and you attempted to sort the data for your variable into categories based on their exact responses or values, do you think each category would have more than one (maybe two) data points in it? Would you have a reasonable number of categories to analyze? If you compared the relationship between two of your variables, would it still match up in scope to your original question? If yes, it's likely a categorical variable. If no, it's likely a continuous variable. For example: If your research question is, "Are optimism level and political party related?", then breaking things down to the categories looks like: "Is there a difference between registered republicans' and registered democrats (categorical independent variable) level of optimism?", which isn't the same question, but covers a significant and interesting component of the original question. However, if our research question is, "Do people become more optimistic as they age? ", breaking things down into categories gives us the question, "Is there a difference in optimism level between someone who is 48 years 2 months old and someone who is 48 years 3 months old?". Comparing those two categories doesn't really speak to our original question. Or, if our question is: "Is extraverted behavior related to optimism?" and we use a likert scale of 1 to 7 to measure extraverted behavior, our question breaks down to: "Is there a difference in optimism between someone who scored 3.57 on the extraversion scale and someone who scored 6.35?" Even though these scores are very different, the "categories" of 3.57 and 6.35 are an arbitrary comparison in light of our original question.</p>
+
+											<h3 id="decision_tree">Analysis Decision Tree</h3>
+
+											<p>So take a moment to identify what your variables are, which ones are the independent variables, and which one is your dependent variable for the specific analysis you are about to undertake. Next, figure out for each of your dependent *and* independent variables whether the contents of its data are categorical or continuous. Then you can use this tree to figure out which is the appropriate hypothesis analysis to perform on your data.</p>
+
+											<span class="image featured"><img src="images/Variables_and_Analysis.png" alt="analysis decision tree" /></span>
+
+											<h3 id="correlation">Correlations</h3>
+											<p>Use a Pearson correlation for data where both the independent and dependent variables are continuous.</p>
+
+											<span class="image featured"><img src="images/correlation1.png" alt="" /></span>
+											<span class="image featured"><img src="images/correlation2.png" alt="" /></span>
+											<span class="image featured"><img src="images/correlation3.png" alt="" /></span>
+											<h4>Reporting in APA format:</h4>
+											<p>There was [not] a significant [positive/negative] correlation between [independent variable] and [dependent variable] (r = .###, p < .##), indicating that [participants/specific population] who [experienced/showed/demonstrated] [more/less of] [independent variable] tended to have [lower/higher] [dependent variable].</p>
+
+
+											<h3 id="t_test">T-tests</h3>
+											<p>Use a t-test for data where you have one categorical independent variable that has only two data levels (i.e. is only manual vs automatic, rather than green vs yellow vs orange) and one continuous dependent variable.</p>
+
+											<p>With a t-test we can answer questions like: Does exposing people to a pro-social vs. non-prosocial norm influence their levels of altruism? Is gender associated with altruism?</p>
+
+
+											<span class="image featured"><img src="images/ttest1.png" alt="" /></span>
+											<span class="image featured"><img src="images/ttest2.png" alt="" /></span>
+											<p>Group statistics tells us that those in the non-altruistic condition were less altruistic than those in the altruistic condition</p>
+											<span class="image featured"><img src="images/ttest3.png" alt="" /></span>
+											<p>T-test tells us whether those means are significantly different from one another.</p>
+
+											<span class="image featured"><img src="images/ttest4.png" alt="" /></span>
+											<h4>Reporting in APA format:</h4>
+											<p>[Independent variable category 1] (M = ###; SD = ###) [do not] [report/have/show/feature] significantly [more/less] [dependent variable] between than [independent variable category 2] (M = ###; SD = ###), t = ###, p < .##.</p>
+
+											<h3 id="anova">ANOVAs</h3>
+
+											<p>Use a one-way ANOVA for data where you have one categorical independent variable that can have two or more data levels and one continuous dependent variable.</p>
+
+											<span class="image featured"><img src="images/anova1.png" alt="" /></span>
+											<span class="image featured"><img src="images/anova2.png" alt="" /></span>
+											<span class="image featured"><img src="images/anova3.png" alt="" /></span>
+											<h4>Reporting in APA format:</h4>
+											<p>A One-way ANOVA showed there was [not] a statistically significant difference in means on [dependent variable] based on [independent variable], F([between groups df],[within groups df]) = ####, p= .###, such that [independent variable category 1] (M= ###; SD = ###) [had/ did not have] significantly different average [scores/rates/etc] than [independent variable category 2] (M= ###; SD= ###)</p>
+
+
+											<h3>When you're done here, it's time to <a href="visualization.html">visualize your data so these results are more intuitive to understand</a></h3>
+										</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col6 col-6-narrower col-12-mobilep">
+								<h3>Links to Stuff</h3>
+								<ul class="footerlinks">
+									<li><a href="#">Qualtrics</a></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Maryam Seifeldin 2019. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
